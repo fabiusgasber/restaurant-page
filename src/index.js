@@ -1,8 +1,8 @@
 import "./styles.css"
-import { loadContent } from "./loadContent"
+import { loadHome } from "./home"
 
 function init() {
-    loadContent();
+    loadHome();
 }
 
 init();

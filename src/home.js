@@ -1,4 +1,4 @@
-export function loadContent() {
+export function loadHome() {
     const contentDiv = document.querySelector("div#content");
 
     const heading = document.createElement("h1")
