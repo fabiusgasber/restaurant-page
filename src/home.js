@@ -1,5 +1,6 @@
 export function loadHome() {
-    const contentDiv = document.querySelector("div#content");
+    const homeDiv = document.createElement("div");
+    homeDiv.classList.add("home")
 
     const heading = document.createElement("h1")
     heading.textContent = "Restaurant Page";
@@ -9,8 +10,11 @@ export function loadHome() {
 
     const menuButton = document.createElement("button")
     menuButton.textContent = "Menu";
+    menuButton.id = "homeMenu";
 
     const content = [heading, subText, menuButton]
+    homeDiv.append(...content);
 
-    contentDiv.append(...content);
+    const contentDiv = document.querySelector("div#content");
+    contentDiv.append(homeDiv);
 }
