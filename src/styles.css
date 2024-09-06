@@ -1,0 +1,11 @@
+body::before {
+    content: " ";
+    background: no-repeat fixed center/100vw url(kathy-lee-ficHycZQPxE-unsplash.jpg);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
