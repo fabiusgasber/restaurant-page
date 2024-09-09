@@ -29,15 +29,19 @@ export function loadMenu() {
 
         const courseInfo = document.createElement("p");
         courseInfo.textContent = item.courseInfo;
+        courseInfo.classList.add("courseInfo");
 
         const menuHeadline = document.createElement("h1");
         menuHeadline.textContent = item.menuHeadline;
+        menuHeadline.classList.add("menuHeadline");
 
         const menuDescription = document.createElement("p");
         menuDescription.textContent = item.menuDescription;
+        menuDescription.classList.add("menuDescription");
 
         const winePairing = document.createElement("p");
-        winePairing.textContent = item.winePairing;  
+        winePairing.textContent = item.winePairing; 
+        winePairing.classList.add("winePairing"); 
 
         menuItem.appendChild(courseInfo);
         menuItem.appendChild(menuHeadline);
