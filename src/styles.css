@@ -50,7 +50,7 @@ button {
     border: none;
     border-radius: 10px;
     background-color: rgb(213, 103, 0);
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }
 
 button:hover {
