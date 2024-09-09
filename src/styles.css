@@ -2,6 +2,12 @@
     color: white;
 }
 
+h1, p {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 @font-face {
     font-family: playfair;
     src: url(Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
