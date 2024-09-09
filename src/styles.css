@@ -38,3 +38,22 @@ div#content div {
     flex-direction: column;
     align-items: center;
 }
+
+button {
+    appearance: none;
+    font-family: inherit;
+    font-size: 100%;
+    width: 20%;
+    height: 30px;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(213, 103, 0);
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    background-color: black;
+    color: rgb(213, 103, 0);
+}
