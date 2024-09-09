@@ -1,3 +1,15 @@
+:root {
+    color: white;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 body::before {
     content: " ";
     background: no-repeat fixed center/100vw url(kathy-lee-ficHycZQPxE-unsplash.jpg);
@@ -9,3 +21,20 @@ body::before {
     left: 0;
 }
 
+div#content, header {
+    position: relative;
+}
+
+div#content {
+    flex-grow: 2;
+}
+
+header {
+    flex-grow: 1;
+}
+
+div#content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
