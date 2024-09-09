@@ -74,11 +74,12 @@ button {
     border-radius: 10px;
     background-color: rgb(213, 103, 0);
     transition-duration: 1s;
+    color: white;
 }
 
 button:hover {
-    background-color: black;
-    color: rgb(213, 103, 0);
+    background-color: rgb(128, 62, 1);
+    color: white;
     cursor: pointer;
 }
 
