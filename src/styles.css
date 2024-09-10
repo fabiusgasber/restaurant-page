@@ -91,17 +91,14 @@ div#content, header {
     align-self: start;
 }
 
+.menu {
+    grid-template-rows: 1fr repeat(3, 2fr);
     line-height: 1.5;
 }
 
 .menu > h1 {
     text-decoration: underline;
-}
-
-.menu div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    text-align: center;
 }
 
 button {
