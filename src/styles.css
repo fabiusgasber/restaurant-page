@@ -62,8 +62,9 @@ div#content, header {
     position: relative;
 }
 
-.menu {
+.menu, .home, .contact {
     height: 70vh;
+    width: 80vw;
     display: grid;
     grid-template-columns: minmax(150px, 30rem);
     grid-template-rows: repeat(4, 1fr);
