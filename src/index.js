@@ -3,20 +3,22 @@ import { loadHome } from "./home"
 import { loadMenu } from "./menu";
 import { loadContact } from "./contact";
 
+function init(){
+    tabSwitch();
+    loadHome();
+}
 
 function tabSwitch(){
-    const body = document.querySelector("body");
-    body.addEventListener("click", loadTab);
+    const listItems = document.querySelectorAll("li");
+    listItems.forEach(listItem => listItem.addEventListener("click", loadTab));
 }
 
 function loadTab(e){
-    console.dir(e.target);
     const currentTab = e.target.id;
     const contentDiv = document.querySelector("div#content");
     contentDiv.innerHTML = "";
     switch(currentTab) {
         case "menuBtn":
-        case "homeMenu":
             loadMenu();
             break;
         case "contactBtn":
@@ -28,5 +30,4 @@ function loadTab(e){
     }
 }
 
-tabSwitch();
-loadHome();
+init();
