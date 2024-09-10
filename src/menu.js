@@ -55,6 +55,7 @@ export function loadMenu() {
     });
 
     const contentDiv = document.querySelector("div#content");
+    contentDiv.innerHTML = "";
 
     contentDiv.append(menuDiv);
 }

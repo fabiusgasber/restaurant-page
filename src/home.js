@@ -1,3 +1,5 @@
+import { loadMenu } from "./menu";
+
 export function loadHome() {
     const homeDiv = document.createElement("div");
     homeDiv.classList.add("home")
@@ -11,6 +13,8 @@ export function loadHome() {
     const menuButton = document.createElement("button")
     menuButton.textContent = "Menu";
     menuButton.id = "homeMenu";
+
+    menuButton.addEventListener("click", loadMenu);
 
     const content = [heading, subText, menuButton]
     homeDiv.append(...content);
