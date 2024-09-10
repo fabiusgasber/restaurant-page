@@ -80,7 +80,17 @@ div#content, header {
 }
 
 .home {
-    grid-template-columns: 1fr;
+    line-height: 1.5;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.home button {
+    align-self: start;
+}
+
     line-height: 1.5;
 }
 
