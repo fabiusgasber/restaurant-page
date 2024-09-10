@@ -2,6 +2,9 @@ export function loadMenu() {
 
     const menuDiv = document.createElement("div");
     menuDiv.classList.add("menu");
+    const menuHeadline = document.createElement("h1");
+    menuHeadline.textContent = "Menu";
+    menuDiv.appendChild(menuHeadline);
 
     const menuItems = [
         {
@@ -12,7 +15,7 @@ export function loadMenu() {
         },
         {
             courseInfo: "Main Course",
-            menuHeadline: "Seared Duck Breast with Blackberry Port Reduction",
+            menuHeadline: "Seared Duck Breast",
             menuDescription: "Pan-seared duck breast served with caramelized shallots, truffle-infused mashed potatoes, and a rich blackberry port reduction.",
             winePairing: "Wine Pairing: Pinot Noir"
         },
