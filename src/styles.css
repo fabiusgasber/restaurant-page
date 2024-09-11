@@ -91,12 +91,16 @@ div#content, header {
 }
 
 .menu {
-    grid-template-rows: 1fr repeat(3, 2fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
     line-height: 1.5;
+    gap: 1rem;
 }
 
 .menu > h1 {
     text-align: center;
+    grid-column: span 2;
 }
 
 .menuHeadline {
