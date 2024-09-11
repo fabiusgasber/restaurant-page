@@ -11,19 +11,22 @@ export function loadMenu() {
             courseInfo: "First Course",
             menuHeadline: "Heirloom Tomato & Burrata Salad",
             menuDescription: "Delicate heirloom tomatoes, creamy burrata, basil oil, and a balsamic reduction.",
-            winePairing: "Wine Pairing: Sauvignon Blanc"
+            winePairing: "Wine Pairing: Sauvignon Blanc",
+            price: "22",
         },
         {
             courseInfo: "Main Course",
             menuHeadline: "Seared Duck Breast",
             menuDescription: "Pan-seared duck breast served with caramelized shallots, truffle-infused mashed potatoes, and a rich blackberry port reduction.",
-            winePairing: "Wine Pairing: Pinot Noir"
+            winePairing: "Wine Pairing: Pinot Noir", 
+            price: "38",
         },
         {
             courseInfo: "Dessert",
             menuHeadline: "Lavender Honey Crème Brûlée",
             menuDescription: "Silky custard infused with lavender and honey, topped with a golden caramelized sugar crust.",
-            winePairing: "Wine Pairing: Late Harvest Riesling"
+            winePairing: "Wine Pairing: Late Harvest Riesling",
+            price: "27",
         },
     ]
 
@@ -46,12 +49,12 @@ export function loadMenu() {
         winePairing.textContent = item.winePairing; 
         winePairing.classList.add("winePairing"); 
 
-        menuItem.appendChild(courseInfo);
-        menuItem.appendChild(menuHeadline);
-        menuItem.appendChild(menuDescription);
-        menuItem.appendChild(winePairing);
+        const price = document.createElement("p");
+        price.textContent = item.price;
+
+        menuItem.append(courseInfo, menuHeadline, menuDescription, winePairing);
         
-        menuDiv.appendChild(menuItem);    
+        menuDiv.append(menuItem, price);
     });
 
     const contentDiv = document.querySelector("div#content");
