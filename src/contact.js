@@ -37,3 +37,22 @@ function getInputElement(type, name, required, placeholder){
     input.placeholder = placeholder;
     return input;
 }
+
+function loadForm() {
+    const contactForm = document.createElement("form");
+    contactForm.action = "";
+    contactForm.method = "get";
+    contactForm.id = "contact-form"
+    contactForm.classList.add("contact-form");
+    const firstName = getInputElement("text", "firstName", true, "First Name");
+    const lastName = getInputElement("text", "lastName", true, "Last Name");
+    const email = getInputElement("email", "email", true, "E-Mail");
+    const tel = getInputElement("tel", "tel", true, "Telephone Number");
+    const textarea = document.createElement("textarea");
+    textarea.name = "textarea";
+    textarea.placeholder = "Please write down your message for us"
+    textarea.required = true;
+    const formChilds = [firstName, lastName, email, tel, textarea];
+    contactForm.append(...formChilds);
+    return contactForm;
+}
