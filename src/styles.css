@@ -99,6 +99,10 @@ div#content, header {
     text-align: center;
 }
 
+.menuHeadline {
+    color: rgb(213, 103, 0);
+}
+
 button {
     appearance: none;
     font-family: inherit;
