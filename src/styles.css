@@ -20,13 +20,15 @@ h1, p {
 
 body {
     background-color: black;
-    height: 90vh;
     display: grid;
     font-family: montserrat;
     padding: 20px;
     justify-items: center;
+    align-content: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 3rem;
+    overflow: hidden;
 }
 
 .home h1 {
