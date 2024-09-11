@@ -18,4 +18,4 @@ Through this project, I will deepen my understanding of:
 
 ## Live Demo
 
-A live demo will be added soon.
+A live demo can be accessed [here](https://fabiusgasber.github.io/restaurant-page/).
