@@ -6,20 +6,8 @@ export function loadContact() {
     headline.textContent = "Get in touch with us";
     
     const contactText = document.createElement("p");
-    contactText.textContent = "Have any questions or need assistance? We're here to help! Fill out the form below, and our team will get back to you as soon as possible. You can also reach us at:"
+    contactText.textContent = "Have any questions or need assistance? We're here to help! Fill out the form below, and our team will get back to you as soon as possible."
     
-    const adressList = document.createElement("ul");
-    const street = document.createElement("li");
-    street.textContent = "1234 Main Street";
-    const city = document.createElement("li");
-    city.textContent = "City, State, ZIP Code";
-    const phone = document.createElement("li");
-    phone.textContent = "Phone: (123) 456-7890";
-    const email = document.createElement("li");
-    email.textContent = "Email: contact@yourcompany.com";
-
-    adressList.append(street, city, phone, email);
-
     const contactForm = loadForm();
     
     const submitBtn = document.createElement("button");
@@ -28,7 +16,7 @@ export function loadContact() {
     submitBtn.value = "Submit";
     submitBtn.textContent = "Submit";
 
-    contactDiv.append(headline, contactText, adressList, contactForm, submitBtn);
+    contactDiv.append(headline, contactText, contactForm, submitBtn);
     const contentDiv = document.querySelector("div#content");
     
     contentDiv.append(contactDiv);
