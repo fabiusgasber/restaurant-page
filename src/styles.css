@@ -142,7 +142,17 @@ ul li:hover {
 
 .contact {
     justify-items: center;
-    gap: 3rem;
+    gap: 2em;
+}
+
+.contact ul {
+    flex-direction: column;
+    gap: 0;
+}
+
+.contact ul li:hover {
+    text-decoration: none;
+    cursor: auto;
 }
 
 #contact-form {
