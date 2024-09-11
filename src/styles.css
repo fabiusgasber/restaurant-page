@@ -139,3 +139,37 @@ ul li:hover {
     text-decoration-color: rgb(213, 103, 0);
     cursor: pointer;
 }
+
+.contact {
+    justify-items: center;
+    gap: 3rem;
+}
+
+#contact-form {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+textarea {
+    grid-column: span 2;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 50px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+form input {
+    appearance: none;
+    border: none;
+    width: 15rem;
+    height: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: inherit;
+}
